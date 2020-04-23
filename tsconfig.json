@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "module": "amd",
+      "declaration": true,
+      "outDir": "dist",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "moduleResolution": "node",
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "baseUrl": "/",
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }
