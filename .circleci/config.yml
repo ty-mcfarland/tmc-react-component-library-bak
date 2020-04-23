@@ -80,15 +80,15 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
-          filters:
-            tags:
-              only: /.*/
+      - build
+          # filters:
+          #   tags:
+          #     only: /.*/
       - deploy:
           requires:
             - build
-          filters:
-            tags:
-              only: /^v.*/
-            branches:
-              ignore: /.*/
+          # filters:
+          #   tags:
+          #     only: /^v.*/
+          #   branches:
+          #     ignore: /.*/
